@@ -22,5 +22,8 @@ Web Socket is currently for internal use only. If you need realtime communicatio
 All APIs are used at your risk and expense. We are not responsible for any negligence, error, compromised security, malfunction, cyberattack, or other force majeure affecting this environment. You hereby release us, hold us harmless, and indemnify us from any and all damages, losses, or claims associated with your use of this environment.
 
 # Contact
-terence.lee@bitmart.com 
+terence.lee@bitmart.com
+
+or
+
 siyuan.meng@bitmart.com
