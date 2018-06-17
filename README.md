@@ -23,7 +23,5 @@ All APIs are used at your risk and expense. We are not responsible for any negli
 
 # Contact
 terence.lee@bitmart.com
-
 or
-
 siyuan.meng@bitmart.com
