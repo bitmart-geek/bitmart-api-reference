@@ -14,6 +14,8 @@ headers = {"X-BM-TIMESTAMP": xxx, "X-BM-AUTHORIZATION": "xxx", "Content-Type": "
 
 data = {"symbol": "BMX_ETH","amount": 1,"price" : 1,"side" : "buy"}
 
+data = json.dumps(data)
+
 response = requests.post(url, data=data, headers=headers)
 
 print(response.text)
