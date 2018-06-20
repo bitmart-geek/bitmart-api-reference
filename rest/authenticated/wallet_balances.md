@@ -22,8 +22,8 @@ print(response.text)
 ```js
 [
    {
-        "id": "Ethereum"
-        "total": 10,
+        "id": "BTC"
+        "available": 10,
         "name": "Bitcoin",
         "frozen": 0,
     },
@@ -37,7 +37,7 @@ print(response.text)
 | :--- | :--- | :--- |
 | id | string | This is the short name of the currency. |
 | name | string | This is the full name of the currency. |
-| total | string | This is the amount of available currency. |
+| available | string | This is the amount of available currency. |
 | frozen | string | This is the amount of frozen currency. |
 
 
