@@ -30,8 +30,7 @@ print(response.text)
    "original_amount":"1",
    "executed_amount":"1",
    "remaining_amount":"0",
-   "status":3,
-   "type":"limit"
+   "status":3
 }
 ```
 

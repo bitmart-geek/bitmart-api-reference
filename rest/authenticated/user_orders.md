@@ -32,8 +32,7 @@ print(response.text)
          "original_amount":"1",
          "executed_amount":"1",
          "remaining_amount":"0",
-         "status":3,
-         "type":"market"
+         "status":3
       }
    ],
    "total_pages":1,
