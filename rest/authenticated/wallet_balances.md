@@ -26,7 +26,8 @@ print(response.text)
         "available": 10,
         "name": "Bitcoin",
         "frozen": 0,
-    },
+    }, 
+    
     ...
 ]
 ```
