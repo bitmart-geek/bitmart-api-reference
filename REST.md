@@ -170,7 +170,7 @@ A: Yes you may request multiple token and use at the same time. However, placing
 
 **Q: Do I need to request token every time before I make a functional call?**
 
-A: No you don't have to because the token expiration time is 900 seconds which means you can get a token and use this token to make functional calls until the token expires.**
+A: No you don't have to because the token expiration time is 900 seconds which means you can get a token and use this token to make functional calls until the token expires.
 
 
 
