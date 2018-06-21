@@ -162,6 +162,16 @@ A successful response is indicated by HTTP status code 200 and may contain an op
 * GET [List Orders](rest/authenticated/user_orders.md)
 * GET [Order details](rest/authenticated/order_details.md)
 
+# Q & A
+
+**Q: Can we use multiple vald token at the same time?**
+
+A: Yes you may request multiple token and use at the same time. However, placing (or canceling) orders with multiple token at the same time is not allowed.
+
+**Q: Do I need to request token every time before I make a functional call?**
+
+A: No you don't have to because the token expiration time is 900 seconds which means you can get a token and use this token to make functional calls until the token expires.**
+
 
 
 
