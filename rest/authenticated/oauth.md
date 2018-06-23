@@ -21,7 +21,7 @@ def privateKeyEncrypt(content, privateKey):
 # Get accessToken
 def getAccessToken(apiKey, clientSecret):
 	url = "https://api.bitmart.com/v2/token"
-    data = {"grant_type": "client_credentials","client_id": apiKey, "client_secret": clientSecret}
+        data = {"grant_type": "client_credentials","client_id": apiKey, "client_secret": clientSecret}
 	response = requests.post(url, data = payload)
 	print(response.content)
 	accessToken = response.json()['data']['access_token']
