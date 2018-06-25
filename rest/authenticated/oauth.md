@@ -5,43 +5,67 @@ Get bearer token issued by the authorization server.
 ### Sample Request \(Python\)
 
 ```py
+from M2Crypto import *
 import time
+import base64
 import requests
 import json
-from M2Crypto import *
-import base64
-import random
 
-def privateKeyEncrypt(content, privateKey):
-	# Encrypt content and remember to use your privateKey to encrypt
-	encryptContent = privateKey.private_encrypt(content, RSA.pkcs1_padding)
-	encodeContent = base64.b64encode(encryptContent)
-	return encodeContent
+api_url = "http://api.bitmart.com/v2/access"
+api_key = xxx # please replace with your api key here
+api_secret = xxx # please replace with your api secret here
+private_key = xxx # please replace with your private key here
 
-# Get accessToken
-def getAccessToken(apiKey, clientSecret):
-	url = "https://api.bitmart.com/v2/token"
-        data = {"grant_type": "client_credentials","client_id": apiKey, "client_secret": clientSecret}
-	response = requests.post(url, data = payload)
-	print(response.content)
-	accessToken = response.json()['data']['access_token']
-	return accessToken
+def encrypt_rsa_pri_key(message):
+    '''
+    Encrypt with private key.
+    '''
 
-############################ Main Function ##########################
+    pem_prefix = '-----BEGIN RSA PRIVATE KEY-----\n'
+    pem_suffix = '\n-----END RSA PRIVATE KEY-----'
+    private_key_str = '{}{}{}'.format(pem_prefix, private_key, pem_suffix)
 
-    # RSA private key string which starts with "MI"
-    privateKey = xxxxxx
+    pri_key = RSA.load_key_string(private_key_str)
+    # pri_key = RSA.load_key('_pri.pem') # You can also load key from .pem file.
+    encrypted = pri_key.private_encrypt(message, RSA.pkcs1_padding)
+    ciphertext = base64.b64encode(encrypted)
 
-    apiKey = xxxx
-    apiSecret = xxxx
+    return ciphertext
 
-    timestamp = str(long(time.time() * 1000))
 
-    signContent = apiKey + ":" + apiSecret + ":" + timestamp
+def decrypt_rsa_pub_key(encrypt_msg):
+    '''
+    Decrypt with public key.
+    '''
+    pub_key = RSA.load_pub_key('_pub.pem')
+    message = base64.b64decode(encrypt_msg)
+    decrypted = pub_key.public_decrypt(message, RSA.pkcs1_padding)
+    print decrypted
 
-    clientSecret = privateKeyEncrypt(signContent, privateKey)
-    accessToken = getAccessToken(apiKey, clientSecret)
-    print(accessToken)
+
+def get_signed_content(api_key, api_secret):
+    timestamp = time.time() * 1000
+    signed_content = api_key + ":" + api_secret + ":" + str(long(timestamp))
+    return signed_content
+
+
+def get_access_token(apiKey, client_secret):
+    url = "https://api.bitmart.com/v2/token"
+    data = {"grant_type": "client_credentials","client_id": apiKey, "client_secret": client_secret}
+    response = requests.post(url, data = data)
+    print(response.content)
+    accessToken = response.json()['access_token']
+    return accessToken
+
+if __name__ == '__main__':
+    signed_content = get_signed_content(api_key, api_secret)
+    client_secret = encrypt_rsa_pri_key(signed_content)
+
+    print "AppSecret:"
+    print client_secret
+
+    access_token = get_access_token(api_key, client_secret)
+    print access_token
 
 ```
 
