@@ -32,17 +32,6 @@ def encrypt_rsa_pri_key(message):
 
     return ciphertext
 
-
-def decrypt_rsa_pub_key(encrypt_msg):
-    '''
-    Decrypt with public key.
-    '''
-    pub_key = RSA.load_pub_key('_pub.pem')
-    message = base64.b64decode(encrypt_msg)
-    decrypted = pub_key.public_decrypt(message, RSA.pkcs1_padding)
-    print decrypted
-
-
 def get_signed_content(api_key, api_secret):
     timestamp = time.time() * 1000
     signed_content = api_key + ":" + api_secret + ":" + str(long(timestamp))
