@@ -132,7 +132,7 @@ A successful response is indicated by HTTP status code 200 and may contain an op
 
 ### Currencies
 
-* GET [currencies](rest/public/currencies.md)
+* GET [Currencies](rest/public/currencies.md)
 
 ### Products
 
