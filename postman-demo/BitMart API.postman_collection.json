@@ -1,0 +1,674 @@
+{
+	"info": {
+		"_postman_id": "74b7a307-402a-4003-b6cf-f6e29129e2af",
+		"name": "BitMart API V2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Ping",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{url}}/v2/ping",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"v2",
+						"ping"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Server Time",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "f41aebf0-2985-46c8-aa2b-41c4fa0d454b",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{url}}/v2/time",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"v2",
+						"time"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Steps",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{url}}/v2/steps",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"v2",
+						"steps"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Currencies",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{url}}/v2/currencies",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"v2",
+						"currencies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Supply",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{url}}/v2/supply",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"v2",
+						"supply"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Symbols",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{url}}/v2/symbols",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"v2",
+						"symbols"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Symbol Details",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{url}}/v2/symbols/BMX_ETH",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"v2",
+						"symbols",
+						"BMX_ETH"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ticker Single Pair",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{url}}/v2/ticker?symbol=BMX_ETH",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"v2",
+						"ticker"
+					],
+					"query": [
+						{
+							"key": "symbol",
+							"value": "BMX_ETH"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ticker All",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{url}}/v2/ticker",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"v2",
+						"ticker"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Market kline",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{url}}/v2/symbols/BMX_ETH/kline?from=1525760116000&to=1525769116000&step=15",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"v2",
+						"symbols",
+						"BMX_ETH",
+						"kline"
+					],
+					"query": [
+						{
+							"key": "from",
+							"value": "1525760116000"
+						},
+						{
+							"key": "to",
+							"value": "1525769116000"
+						},
+						{
+							"key": "step",
+							"value": "15"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Market Order Book",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{url}}/v2/symbols/BMX_ETH/orders?precision=6",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"v2",
+						"symbols",
+						"BMX_ETH",
+						"orders"
+					],
+					"query": [
+						{
+							"key": "precision",
+							"value": "6"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Market Trades",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{url}}/v2/symbols/BMX_ETH/trades",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"v2",
+						"symbols",
+						"BMX_ETH",
+						"trades"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "v2 -- Get Token",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "8759f6e5-5990-4040-88f5-e34bdd289603",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"    var jsonData = pm.response.json();",
+							"    pm.environment.set(\"token\", \"Bearer \" + jsonData.access_token);",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "client_id",
+							"value": "{{client_id}}",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "{{client_secret}}",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/v2/token",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"v2",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Wallet",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "30d24ec4-78f9-405a-9aa7-73e69893c36f",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "38dd7b35-053b-4a86-a0dd-f7ea41d630a8",
+						"type": "text/javascript",
+						"exec": [
+							"var timestamp = new Date().getTime();",
+							"pm.environment.set(\"timestamp\", timestamp);"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-BM-AUTHORIZATION",
+						"value": "{{token}}"
+					},
+					{
+						"key": "X-BM-TIMESTAMP",
+						"value": "{{timestamp}}"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "{{url}}/v2/wallet",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"v2",
+						"wallet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Order",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "408e4e98-28ea-4707-9551-25301159e66d",
+						"type": "text/javascript",
+						"exec": [
+							"var jsonData = pm.response.json();",
+							"pm.environment.set(\"entrust_id\", jsonData.entrust_id);"
+						]
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "33beb65c-cb47-438e-b3d8-7d436868331e",
+						"type": "text/javascript",
+						"exec": [
+							"var timestamp = new Date().getTime();",
+							"pm.environment.set(\"timestamp\", timestamp);"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "X-BM-AUTHORIZATION",
+						"value": "{{token}}"
+					},
+					{
+						"key": "X-BM-TIMESTAMP",
+						"value": "{{timestamp}}"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"symbol\": \"BMX_ETH\",\n  \"amount\": 1,\n  \"price\" : 1,\n  \"side\" : \"buy\"\n}"
+				},
+				"url": {
+					"raw": "{{url}}/v2/orders",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"v2",
+						"orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Order Details",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "30d24ec4-78f9-405a-9aa7-73e69893c36f",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "994357a7-93b0-4ac0-a431-177e6c66767c",
+						"type": "text/javascript",
+						"exec": [
+							"var timestamp = new Date().getTime();",
+							"pm.environment.set(\"timestamp\", timestamp);"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-BM-AUTHORIZATION",
+						"value": "{{token}}"
+					},
+					{
+						"key": "X-BM-TIMESTAMP",
+						"value": "{{timestamp}}"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "{{url}}/v2/orders/{{entrust_id}}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"v2",
+						"orders",
+						"{{entrust_id}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Orders",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "4fbfe126-00d5-4432-8a2b-9cb01a04d84c",
+						"type": "text/javascript",
+						"exec": [
+							"var timestamp = new Date().getTime();",
+							"pm.environment.set(\"timestamp\", timestamp);"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-BM-AUTHORIZATION",
+						"value": "{{token}}"
+					},
+					{
+						"key": "X-BM-TIMESTAMP",
+						"value": "{{timestamp}}"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "{{url}}/v2/orders?status=0&offset=0&limit=100",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"v2",
+						"orders"
+					],
+					"query": [
+						{
+							"key": "status",
+							"value": "0"
+						},
+						{
+							"key": "offset",
+							"value": "0"
+						},
+						{
+							"key": "limit",
+							"value": "100"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cancel User Order",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "30d24ec4-78f9-405a-9aa7-73e69893c36f",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "9b6be8dc-c5bd-44fd-bc6a-027a064b5c79",
+						"type": "text/javascript",
+						"exec": [
+							"var timestamp = new Date().getTime();",
+							"pm.environment.set(\"timestamp\", timestamp);"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "X-BM-AUTHORIZATION",
+						"value": "{{token}}"
+					},
+					{
+						"key": "X-BM-TIMESTAMP",
+						"value": "{{timestamp}}"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "{{url}}/v2/orders/{{entrust_id}}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"v2",
+						"orders",
+						"{{entrust_id}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cancel User Orders",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "30d24ec4-78f9-405a-9aa7-73e69893c36f",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "d9c1b3a0-fce6-4f53-8a4c-d6b1f725b0c6",
+						"type": "text/javascript",
+						"exec": [
+							"var timestamp = new Date().getTime();",
+							"pm.environment.set(\"timestamp\", timestamp);"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "X-BM-AUTHORIZATION",
+						"value": "{{token}}"
+					},
+					{
+						"key": "X-BM-TIMESTAMP",
+						"value": "{{timestamp}}"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "{{url}}/v2/orders?symbol=BMX_ETH&side=buy",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"v2",
+						"orders"
+					],
+					"query": [
+						{
+							"key": "symbol",
+							"value": "BMX_ETH"
+						},
+						{
+							"key": "side",
+							"value": "buy"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
