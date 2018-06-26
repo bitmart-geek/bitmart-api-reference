@@ -9,7 +9,7 @@ import requests
 
 url = "https://api.bitmart.com/v2/orders?symbol=BMX_ETH&status=0&offset=0&limit=100"
 
-// timestamp is in milliseconds and the authorization header is "'Bearer ' + token"
+// timestamp is in milliseconds and the authorization header is "Bearer " + token
 headers = {"X-BM-TIMESTAMP": xxx, "X-BM-AUTHORIZATION": "xxx"}
 
 response = requests.get(url, headers=headers)

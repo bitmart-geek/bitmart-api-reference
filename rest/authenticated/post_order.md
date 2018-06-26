@@ -9,7 +9,7 @@ import requests
 
 url = "https://api.bitmart.com/v2/orders"
 
-// timestamp is in milliseconds and the authorization header is "'Bearer ' + token"
+// timestamp is in milliseconds and the authorization header is "Bearer " + token
 headers = {"X-BM-TIMESTAMP": xxx, "X-BM-AUTHORIZATION": "xxx", "Content-Type": "application/json"}
 
 data = {"symbol": "BMX_ETH","amount": 1,"price" : 1,"side" : "buy"}
