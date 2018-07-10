@@ -17,75 +17,72 @@ print(response.text)
 ### Sample Response
 
 ```js
-{
-   "data": [
-       {
-           "timestamp": 1525761000000,
-           "open_price": "0.010130",
-           "highest_price": "0.010130",
-           "lowest_price": "0.010130",
-           "current_price": "0.010130",
-           "volume": "0.000000"
-       },
-       {
-           "timestamp": 1525761900000,
-           "open_price": "0.010130",
-           "highest_price": "0.010130",
-           "lowest_price": "0.010130",
-           "current_price": "0.010130",
-           "volume": "0.000000"
-       },
-       {
-           "timestamp": 1525763700000,
-           "open_price": "0.010130",
-           "highest_price": "0.010130",
-           "lowest_price": "0.010130",
-           "current_price": "0.010130",
-           "volume": "0.000000"
-       },
-       {
-           "timestamp": 1525764600000,
-           "open_price": "0.010130",
-           "highest_price": "0.010130",
-           "lowest_price": "0.010130",
-           "current_price": "0.010130",
-           "volume": "0.000000"
-       },
-       {
-           "timestamp": 1525765500000,
-           "open_price": "0.010130",
-           "highest_price": "0.010130",
-           "lowest_price": "0.010130",
-           "current_price": "0.010130",
-           "volume": "0.000000"
-       },
-       {
-           "timestamp": 1525767300000,
-           "open_price": "0.010130",
-           "highest_price": "0.010130",
-           "lowest_price": "0.010130",
-           "current_price": "0.010130",
-           "volume": "0.000000"
-       },
-       {
-           "timestamp": 1525768200000,
-           "open_price": "0.010130",
-           "highest_price": "0.010130",
-           "lowest_price": "0.010130",
-           "current_price": "0.010130",
-           "volume": "0.000000"
-       },
-       {
-           "timestamp": 1525769100000,
-           "open_price": "0.010130",
-           "highest_price": "0.010130",
-           "lowest_price": "0.010130",
-           "current_price": "0.010130",
-           "volume": "0.000000"
-       }
-   ],
-   "s": "ok"
-}
+[  
+    {  
+        "timestamp":1525761000000,
+        "open_price":"0.010130",
+        "highest_price":"0.010130",
+        "lowest_price":"0.010130",
+        "current_price":"0.010130",
+        "volume":"0.000000"
+    },
+    {  
+        "timestamp":1525761900000,
+        "open_price":"0.010130",
+        "highest_price":"0.010130",
+        "lowest_price":"0.010130",
+        "current_price":"0.010130",
+        "volume":"0.000000"
+    },
+    {  
+        "timestamp":1525763700000,
+        "open_price":"0.010130",
+        "highest_price":"0.010130",
+        "lowest_price":"0.010130",
+        "current_price":"0.010130",
+        "volume":"0.000000"
+    },
+    {  
+        "timestamp":1525764600000,
+        "open_price":"0.010130",
+        "highest_price":"0.010130",
+        "lowest_price":"0.010130",
+        "current_price":"0.010130",
+        "volume":"0.000000"
+    },
+    {  
+        "timestamp":1525765500000,
+        "open_price":"0.010130",
+        "highest_price":"0.010130",
+        "lowest_price":"0.010130",
+        "current_price":"0.010130",
+        "volume":"0.000000"
+    },
+    {  
+        "timestamp":1525767300000,
+        "open_price":"0.010130",
+        "highest_price":"0.010130",
+        "lowest_price":"0.010130",
+        "current_price":"0.010130",
+        "volume":"0.000000"
+    },
+    {  
+        "timestamp":1525768200000,
+        "open_price":"0.010130",
+        "highest_price":"0.010130",
+        "lowest_price":"0.010130",
+        "current_price":"0.010130",
+        "volume":"0.000000"
+    },
+    {  
+        "timestamp":1525769100000,
+        "open_price":"0.010130",
+        "highest_price":"0.010130",
+        "lowest_price":"0.010130",
+        "current_price":"0.010130",
+        "volume":"0.000000"
+    }
+]
 ```
 
 #### Request Parameters
