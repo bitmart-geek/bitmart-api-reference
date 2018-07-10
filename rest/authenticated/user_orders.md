@@ -38,7 +38,6 @@ print(response.text)
    "total_pages":1,
    "total_orders":1,
    "current_page":0,
-   "status":0
 }
 ```
 
@@ -79,8 +78,8 @@ print(response.text)
 | original_amount | string | Order amount |
 | executed_amount | string | Successful amount |
 | remaining_amount | string | Remaining amount |
-| total_pages | string | Total number of pages |
-| total_orders | string | Total number of orders, i.e. status is 0 |
+| total_pages | string | Total number of pages in that status |
+| total_orders | string | Total number of orders in that status |
 | current_page | string | Current page number |
 | status | string | Integer enum, please check the table above |
 
