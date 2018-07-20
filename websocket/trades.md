@@ -1,6 +1,6 @@
 # Trade History
 
-Real-time information of the most recent trades for the given symbol.
+Get the real-time information of the most recent trades for the given symbol.
 
 ### Sample Request \(Python\)
 

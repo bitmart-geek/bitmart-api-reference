@@ -1,6 +1,6 @@
 # Order Book
 
-Get the full order book.
+Get the real-time order details.
 
 ### Sample Request \(Python\)
 

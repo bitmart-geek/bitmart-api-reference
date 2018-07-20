@@ -1,6 +1,6 @@
 # K-line
 
-Get the k-line data of a specific trading pair.
+Get the real-time k-line data of a specific trading pair.
 
 ### Sample Request \(Python\)
 ```py
