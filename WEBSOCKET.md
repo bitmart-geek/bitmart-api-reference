@@ -27,7 +27,7 @@ Once a **subscribe** message is received, the server will respond with a subscri
 
 A sample subscription message looks like:
 
-```
+```js
 {
     "subscribe":"trade",
     "symbol":"BMX_ETH",
@@ -37,7 +37,7 @@ A sample subscription message looks like:
 
 Subsequent subscribe messages will add to the list of subscriptions. For example,
 
-```
+```js
 {
     "subscribe":"trade",
     "precision":6,

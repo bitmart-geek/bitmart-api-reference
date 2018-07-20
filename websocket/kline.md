@@ -3,7 +3,7 @@
 Get the k-line data of a specific trading pair.
 
 ### Sample Request \(Python\)
-```
+```py
 # Feel free to use any websocket client you like. There are also online tools to test websocket.
 # For example, here I use websocket-client. To install:
 # sudo pip install websocket-client ()
@@ -22,7 +22,7 @@ ws.close()
 
 ### Sample Response
 
-```
+```js
 {
     "subscribe":"kline",
     "symbol":"BMX_ETH",

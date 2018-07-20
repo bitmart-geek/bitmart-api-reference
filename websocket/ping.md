@@ -22,6 +22,6 @@ ws.close()
 
 ### Sample Response
 
-```
+```js
 {"subscribe":"pong"}
 ```

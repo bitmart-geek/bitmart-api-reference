@@ -4,7 +4,7 @@ Get the real-time price information of a trading pair.
 
 ### Sample Request \(Python\)
 
-```
+```py
 # Feel free to use any websocket client you like. There are also online tools to test websocket.
 # For example, here I use websocket-client. To install:
 # sudo pip install websocket-client ()
@@ -23,7 +23,7 @@ ws.close()
 
 ### Sample Response
 
-```
+```js
 {
     "subscribe":"price",
     "symbol":"BMX_ETH",
