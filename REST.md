@@ -5,7 +5,7 @@ API endpoints are available for order management, and market query. Every reques
 ### URL
 
 ```
-https://api.bitmart.com
+https://openapi.bitmart.com
 ```
 
 ### Parameters

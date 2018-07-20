@@ -20,7 +20,7 @@ print(response.text)
 [  
    {
       "amount":"0.05768509",
-      "order_time":1527057452,
+      "order_time":1527057452000,
       "price":"0.004811",
       "count":"11.99",
       "type":"buy"
@@ -40,7 +40,7 @@ print(response.text)
 | Key | Type | Description |
 | :--- | :--- | :--- |
 | amount | string | This is the number of coins offered at a specific price point. |
-| order\_time | number | Order time |
+| order\_time | number | Order time (in milliseconds) |
 | price | string | This is the offer price by a trader or traders at a specific price point. |
 | count | string | This is the total number of orders traded at that that level. |
 | type | String | Order type \("buy"/"sell"\) |

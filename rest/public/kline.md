@@ -92,7 +92,7 @@ print(response.text)
 | symbol | path | Trading pair symbol |
 | from | query | Start time of k-line data \(in milliseconds\) |
 | to | query | End time of k-line data \(in milliseconds\) |
-| step | query | Step of sampling \(in minutes, by default is 1min\) |
+| step | query | [Steps](steps.md) of sampling \(in minutes, default 1 min\) |
 
 #### Response Details
 

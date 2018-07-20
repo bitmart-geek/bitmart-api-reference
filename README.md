@@ -11,10 +11,7 @@ APIs are separated into two categories: trading and feed. Trading APIs require a
 # Documentation
 
 * [REST](REST.md)
-* WEBSOCKET
-
-Web Socket is currently for internal use only. If you need realtime communication in Web Socket or if you would like to suggest changes to the documentation, please contact us.
-
+* [WEBSOCKET](WEBSOCKET.md)
 
 
 # Legal
