@@ -41,9 +41,9 @@ print(response.text)
 | :--- | :--- | :--- |
 | base\_currency | string | Base currency |
 | quote\_currency | string | Quote currency |
-| quote\_increment | number | Minimum order price as well as the price increment |
-| base\_min\_size | number | Minimum trade volume |
-| base\_max\_size | number | Maximum trade volume |
+| quote\_increment | string | Minimum order price as well as the price increment |
+| base\_min\_size | string | Minimum trade volume |
+| base\_max\_size | string | Maximum trade volume |
 | price\_min\_precision | number | Minimum price precision (digit) used to query price and kline |
 | price\_max\_precision | number | Maximum price precision (digit) used to query price and kline |
 | expiration | string | Expiration date for limited contracts/pairs |
