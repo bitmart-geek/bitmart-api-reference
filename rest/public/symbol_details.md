@@ -20,9 +20,11 @@ print(response.text)
 {
    "base_currency":"BMX",
    "quote_currency":"ETH",
-   "quote_increment":"0.000001"
+   "quote_increment":"0.00000001"
    "base_min_size":"0.01"
-   "base_max_size":"100000000"
+   "base_max_size":"100000000",
+   "price_min_precision":6,
+   "price_max_precision":8,
    "expiration":"NA"
 }
 ```
