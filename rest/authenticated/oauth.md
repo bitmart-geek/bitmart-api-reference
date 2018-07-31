@@ -11,7 +11,7 @@ import base64
 import requests
 import json
 
-api_url = "http://api.bitmart.com/v2/access"
+api_url = "http://openapi.bitmart.com/v2/token"
 api_key = xxx # please replace with your api key here
 api_secret = xxx # please replace with your api secret here
 private_key = xxx # please replace with your private key here
@@ -39,7 +39,7 @@ def get_signed_content(api_key, api_secret):
 
 
 def get_access_token(apiKey, client_secret):
-    url = "https://api.bitmart.com/v2/token"
+    url = "https://openapi.bitmart.com/v2/token"
     data = {"grant_type": "client_credentials","client_id": apiKey, "client_secret": client_secret}
     response = requests.post(url, data = data)
     print(response.content)
