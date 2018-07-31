@@ -7,7 +7,7 @@ Get a list of the most recent trades for the given symbol.
 ```py
 import requests
 
-url = "https://api.bitmart.com/v2/symbols/BMX_ETH/trades"
+url = "https://openapi.bitmart.com/v2/symbols/BMX_ETH/trades"
 
 response = requests.request("GET", url)
 

@@ -7,7 +7,7 @@ Get the k-line data of a specific trading pair.
 ```py
 import requests
 
-url = "https://api.bitmart.com/v2/symbols/BMX_ETH/kline?step=15&from=1525760116000&to=1525769116000"
+url = "https://openapi.bitmart.com/v2/symbols/BMX_ETH/kline?step=15&from=1525760116000&to=1525769116000"
 
 response = requests.request("GET", url)
 

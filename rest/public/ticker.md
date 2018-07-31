@@ -7,7 +7,7 @@ The ticker is a high level overview of the state of the market. It shows you the
 ```py
 import requests
 
-url = "https://api.bitmart.com/v2/ticker?symbol=BMX_ETH"
+url = "https://openapi.bitmart.com/v2/ticker?symbol=BMX_ETH"
 
 response = requests.request("GET", url)
 

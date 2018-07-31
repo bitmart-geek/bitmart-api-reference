@@ -7,7 +7,7 @@ Get the symbol detail.
 ```py
 import requests
 
-url = "https://api.bitmart.com/v2/symbols/BMX_ETH"
+url = "https://openapi.bitmart.com/v2/symbols/BMX_ETH"
 
 response = requests.request("GET", url)
 

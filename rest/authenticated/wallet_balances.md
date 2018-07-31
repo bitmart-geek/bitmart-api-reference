@@ -7,7 +7,7 @@ Get user wallet balances.
 ```py
 import requests
 
-url = "https://api.bitmart.com/v2/wallet"
+url = "https://openapi.bitmart.com/v2/wallet"
 
 // timestamp is in milliseconds and the authorization header is "Bearer " + token
 headers = {"X-BM-TIMESTAMP": xxx, "X-BM-AUTHORIZATION": "xxx"}

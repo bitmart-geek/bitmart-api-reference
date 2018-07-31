@@ -7,7 +7,7 @@ Test connectivity to the REST API.
 ```py
 import requests
 
-url = "https://api.bitmart.com/v2/ping"
+url = "https://openapi.bitmart.com/v2/ping"
 
 response = requests.request("GET", url)
 

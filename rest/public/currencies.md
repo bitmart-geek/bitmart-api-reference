@@ -7,7 +7,7 @@ Get a list of available currencies.
 ```py
 import requests
 
-url = "https://api.bitmart.com/v2/currencies"
+url = "https://openapi.bitmart.com/v2/currencies"
 
 response = requests.request("GET", url)
 

@@ -7,7 +7,7 @@ Get the full order book.
 ```py
 import requests
 
-url = "https://api.bitmart.com/v2/symbols/BMX_ETH/orders?precision=6"
+url = "https://openapi.bitmart.com/v2/symbols/BMX_ETH/orders?precision=6"
 
 response = requests.request("GET", url)
 

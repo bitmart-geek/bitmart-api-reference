@@ -7,7 +7,7 @@ Create a new order.
 ```py
 import requests
 
-url = "https://api.bitmart.com/v2/orders"
+url = "https://openapi.bitmart.com/v2/orders"
 
 // timestamp is in milliseconds and the authorization header is "Bearer " + token
 headers = {"X-BM-TIMESTAMP": xxx, "X-BM-AUTHORIZATION": "xxx", "Content-Type": "application/json"}

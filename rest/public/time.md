@@ -7,7 +7,7 @@ Test connectivity to the REST API and get the current server time (in millisecon
 ```py
 import requests
 
-url = "https://api.bitmart.com/v2/time"
+url = "https://openapi.bitmart.com/v2/time"
 
 response = requests.request("GET", url)
 

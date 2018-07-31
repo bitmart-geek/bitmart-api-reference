@@ -7,7 +7,7 @@ Cancel orders for given condintions.
 ```py
 import requests
 
-url = "https://api.bitmart.com/v2/orders?symbol=BMX_ETH&side=buy"
+url = "https://openapi.bitmart.com/v2/orders?symbol=BMX_ETH&side=buy"
 
 // timestamp is in milliseconds and the authorization header is "Bearer " + token
 headers = {"X-BM-TIMESTAMP": xxx, "X-BM-AUTHORIZATION": "xxx"}

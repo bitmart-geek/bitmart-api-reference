@@ -7,7 +7,7 @@ Get a list of symbol names.
 ```py
 import requests
 
-url = "https://api.bitmart.com/v2/symbols"
+url = "https://openapi.bitmart.com/v2/symbols"
 
 response = requests.request("GET", url)
 

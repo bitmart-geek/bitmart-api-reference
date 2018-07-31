@@ -7,7 +7,7 @@ Get a list of available steps (in minutes) that could be used to query k-line da
 ```py
 import requests
 
-url = "https://api.bitmart.com/v2/steps"
+url = "https://openapi.bitmart.com/v2/steps"
 
 response = requests.request("GET", url)
 
