@@ -22,7 +22,7 @@ Requests parameters for GET requests \(non-authenticated\) are GET parameters, a
 
 In order to offer the best service, we have added a rate limit to the number of REST requests.
 
-Our rate limit policy can vary in a range of 10 to 90 requests per minute depending on some factors \(e.g. servers load, endpoint, etc.\).
+Our rate limit policy can vary in a range of 3 to 90 requests per minute depending on some factors \(e.g. servers load, endpoint, etc.\).
 
 
 
