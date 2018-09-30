@@ -23,7 +23,7 @@ import (
 )
 
 var (
-	baseUrl  = "https://api.bitmart.com/v2"
+	baseUrl  = "https://openapi.bitmart.com/v2"
 	tokenUrl = baseUrl + "/token"
 )
 
