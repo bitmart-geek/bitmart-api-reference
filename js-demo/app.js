@@ -20,7 +20,7 @@ function encrypt(payload) {
  * Get access token
  */
 var tokenRequest = {
-    url: 'https://api.bitmart.com/v2/token',
+    url: 'https://openapi.bitmart.com/v2/token',
     method: 'POST',
     form: {
         'grant_type': 'client_credentials', 
